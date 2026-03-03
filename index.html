@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <main>
+        <!-- player throw section -->
+        <section id="player-section">
+            <h2>Your Throw</h2>
+            <div id="player-choices">
+                <figure>
+                    <img src="images/rock.PNG" alt="Rock" id="player-rock" data-choice="rock">
+                    <figcaption>Rock</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/paper.PNG" alt="Paper" id="player-paper" data-choice="paper">
+                    <figcaption>Paper</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/scissors.PNG" alt="Scissors" id="player-scissors" data-choice="scissors">
+                    <figcaption>Scissors</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- computer throw section -->
+        <section id="computer-section">
+            <h2>Computer Throw</h2>
+            <div id="computer-display">
+                <img src="images/question-mark.PNG" alt="Computer is thinking" id="computer-throw">
+            </div>
+        </section>
+
+        <!-- outcome section -->
+        <section id="outcome-section">
+            <h2>Outcome</h2>
+            <p id="outcome">Make your choice to start the game.</p>
+        </section>
+
+        <!-- score/reset section -->
+        <section id="score-section">
+            <h2>Score</h2>
+            <p id="score">
+                Wins: <span id="wins">0</span> &nbsp;
+                Losses: <span id="losses">0</span> &nbsp;
+                Ties: <span id="ties">0</span>
+            </p>
+            <button id="reset-btn" type="button">Reset</button>
+        </section>
+    </main>
+
+</body>
+
+</html>

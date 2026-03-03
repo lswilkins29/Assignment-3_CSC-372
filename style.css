@@ -1,0 +1,54 @@
+/* layout */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border: 3px solid #333;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+#player-choices,
+#computer-display {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: border-color 0.2s;
+}
+
+img.selected {
+    border-color: blue;
+}
+
+#computer-throw {
+    cursor: default;
+    border: none;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
